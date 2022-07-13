@@ -21,7 +21,18 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
 
 <style>
-
+/* .title {
+border-radius:100px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+color: rgb(15, 247, 119);
+background-color: hsl(316, 88%, 3%);
+text-shadow: 0 0 10px rgb(10, 1, 1), 0 0 10px rgb(225, 14, 204), 0 0 30px #FFF, 0 0 20px #e608e6, 0 0 40px #49FF18, 0 0 50px #12ed95, 0 0 55px #49FF18, 0 0 75px #49ff18;
+-webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #7364ff, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #4912ff, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 4px -4px 15px 0px #13f6cc, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #7b64ff, 20px 6px 7px 0px #4a06e8, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #15b8f8, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0);
+} */
   #carouselBasicExample, 
   .carousel-inner,
   .carousel-item,
@@ -53,10 +64,12 @@
     background-position: center center;
   }
 
+  #carouselBasicExample {
+    margin-top: -146.5px;
+  }
 
   .navbar {
-    position: relative;
-    top:0;
+    z-index: 100;
   }
 
  
@@ -67,25 +80,11 @@
   <body>
     <!-- Start your project here-->
 <header>
-  <style>
-    .title {
-border-radius:100px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 1.5rem;
-color: rgb(15, 247, 119);
-background-color: hsl(316, 88%, 3%);
-text-shadow: 0 0 10px rgb(10, 1, 1), 0 0 10px rgb(225, 14, 204), 0 0 30px #FFF, 0 0 20px #e608e6, 0 0 40px #49FF18, 0 0 50px #12ed95, 0 0 55px #49FF18, 0 0 75px #49ff18;
--webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #7364ff, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #4912ff, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 4px -4px 15px 0px #13f6cc, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #7b64ff, 20px 6px 7px 0px #4a06e8, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #15b8f8, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-</style>
-<div>
+<!-- <div>
   <h1 class="title">💰 SmartMoneySensei's Dojo 🤺</h1>
-</div>
+</div> -->
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-primary bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <!-- Container wrapper -->
   <div class="container-fluid">
 
@@ -241,9 +240,9 @@ box-shadow: 4px -4px 15px 0px #13f6cc, 12px -11px 7px 0px #FF9376, 20px -5px 7px
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-center text-white">
-           <h1 class="mb-4">Ready for Passive Income</h1>
+           <h1 class="mb-4">Ready for <i>Passive Income</i></h1>
            <h2 class="mb-4">In 2022?</h2>
-           <button type="button" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">Click here
+           <button type="button" class="btn btn-outline-success btn-rounded btn-lg" data-mdb-ripple-color="light">Click here
            </button>
       </div>
        </div>
@@ -252,11 +251,31 @@ box-shadow: 4px -4px 15px 0px #13f6cc, 12px -11px 7px 0px #FF9376, 20px -5px 7px
 
     <!-- Single item -->
     <div class="carousel-item">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-center text-white">
+           <h1 class="mb-4"><i>Spending</i> more than</h1>
+           <h2 class="mb-4"><i>Saving?</i></h2>
+           <button type="button" class="btn btn-outline-success btn-rounded btn-lg" data-mdb-ripple-color="light">Click here
+           </button>
+      </div>
+       </div>
+     </div>
 
     </div>
 
     <!-- Single item -->
     <div class="carousel-item">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-center text-white">
+           <h1 class="mb-4">In need of</h1>
+           <h2 class="mb-4"><i>a VACATION?</i></h2>
+           <button type="button" class="btn btn-outline-success btn-rounded btn-lg" data-mdb-ripple-color="light">Click here
+           </button>
+      </div>
+       </div>
+     </div>
       
     </div>
   </div>
