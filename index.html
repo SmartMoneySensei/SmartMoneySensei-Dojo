@@ -20,6 +20,43 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
+
+<style>
+
+  #carouselBasicExample, 
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height:100vh;
+  }
+
+  .carousel-item:nth-child(1) {
+    background-image: url(https://mdbootstrap.com/img/Photos/Others/images/76.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .carousel-item:nth-child(2) {
+    background-image: url(https://mdbootstrap.com/img/Photos/Others/images/77.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .carousel-item:nth-child(3) {
+    background-image: url(https://mdbootstrap.com/img/Photos/Others/images/78.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  
+</style>
+
   </head>
   <body>
     <!-- Start your project here-->
@@ -28,9 +65,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <!-- Container wrapper -->
   <div class="container-fluid">
+
     <!-- Toggle button -->
     <button
-      class="text-dark me-3"
       class="navbar-toggler"
       type="button"
       data-mdb-toggle="collapse"
@@ -40,7 +77,6 @@
       aria-label="Toggle navigation"
     >
       <i class="fas fa-bars"></i>
-      
     </button>
 
     <!-- Collapsible wrapper -->
@@ -49,15 +85,15 @@
       <a class="navbar-brand mt-2 mt-lg-0" href="#">
         <img
           src="./121132334_196797558485662_942003010821305122_n.jpg"
-          height="170"
-          alt="MDB Logo"
+          height="120"
+          alt="Smart Money Sensei Logo"
           loading="lazy"
           class="rounded-circle"
         />
       </a>
       <!-- Left links -->
-      <ul style="font-size: 20px;" class="navbar-nav me-auto mb-2 mb-lg-0">
-        <strong><li class="nav-item">
+      <ul style="font-size: 1.0rem" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
           <a class="text-dark me-3" class="nav-link" href="./index.html">Home</a>
         </li>
         <li class="nav-item">
@@ -68,7 +104,7 @@
         </li>
         <li class="nav-item">
           <a class="text-dark me-3" class="nav-link" href="#">About</a>
-        </li></strong>
+        </li>
       </ul>
       <!-- Left links -->
     </div>
@@ -148,6 +184,63 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
+
+<!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel wrapper -->
 </header>
 
 <main></main>
