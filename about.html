@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link 
+    rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    <title>Sensei's Dojo</title>
+
+    <style>
+        * {
+          height: auto;
+          margin: .5rem;
+          padding: .5rem;
+          box-sizing: border-box;
+        }
+        
+              .title {
+          border-radius:100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+        color: rgb(13, 3, 3);
+        background-color: #232323;
+        text-shadow: 0 0 10px #FFF, 0 0 10px #FFF, 0 0 30px #FFF, 0 0 20px #49ff18, 0 0 40px #49FF18, 0 0 50px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+          -webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #7364ff, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #4912ff, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #7b64ff, 20px 6px 7px 0px #ed23a0, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #15b8f8, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0);
+        }
+        #dojo {display: flex;
+          justify-content: center;
+          height: 100vh;
+            -webkit-animation: dojo 1.5s ease-in-out infinite both;
+                    animation: dojo 1.5s ease-in-out infinite both;
+        }
+        @-webkit-keyframes dojo {
+          from {
+            -webkit-transform: scale(2);
+                    transform: scale(2);
+            -webkit-transform-origin: center center;
+                    transform-origin: center center;
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          10% {
+            -webkit-transform: scale(0.91);
+                    transform: scale(0.91);
+            -webkit-animation-timing-function: ease-in;
+                    animation-timing-function: ease-in;
+          }
+          17% {
+            -webkit-transform: scale(0.98);
+                    transform: scale(0.98);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          33% {
+            -webkit-transform: scale(0.87);
+                    transform: scale(0.87);
+            -webkit-animation-timing-function: ease-in;
+                    animation-timing-function: ease-in;
+          }
+          45% {
+            -webkit-transform: scale(2);
+                    transform: scale(2);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          65% {
+            -webkit-transform: scale(2);
+                    transform: scale(2);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+        }
+        @keyframes dojo {
+          from {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-transform-origin: center center;
+                    transform-origin: center center;
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          10% {
+            -webkit-transform: scale(0.91);
+                    transform: scale(0.91);
+            -webkit-animation-timing-function: ease-in;
+                    animation-timing-function: ease-in;
+          }
+          17% {
+            -webkit-transform: scale(0.98);
+                    transform: scale(0.98);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          33% {
+            -webkit-transform: scale(0.87);
+                    transform: scale(0.87);
+            -webkit-animation-timing-function: ease-in;
+                    animation-timing-function: ease-in;
+          }
+          45% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+          65% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-animation-timing-function: ease-out;
+                    animation-timing-function: ease-out;
+          }
+        }
+        #name {
+          color: #000000;
+          background-color: #0fcfff;
+        }
+        p {
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          background-color: rgb(248, 47, 245);
+          font-size: 2rem;
+        }
+          </style>
+</head>
+<body background="./stars.jpeg">
+  <header>
+        <div>
+                <h1 class="title">💰 Welcome To Sensei's Dojo 🤺</h1>
+        </div>
+</header>
+        <main>
+        <h2 id="name"> My Name is Ka'Sean Cobbs-Walton!</h2>
+        <strong><p>Overall my life has been spent building others dreams. I learned more about life being an entrepreneur as I read quite a few self-help books. My WHY is to help others not fall victim to a system that tried to push me to giving up on my dreams. I continue to achieve success by seeing the results of others I've been blessed to inspire on a day to day basis. Learned how to multiply my income within a $6.6 Trillion Market 5+ years ago. Now after being connected with other educators, I have been blessed to be apart of the beginning wave of millennials that will inspire others to learn how to multiply their income while sleeping.</p></strong>
+        <div id="dojo"> <img src="./121132334_196797558485662_942003010821305122_n.jpg" alt="image of a doll figure with text saying smartmoneysenseii dojo">
+        </div>
+        </main>
+  </body>
+</html>
+
