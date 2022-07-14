@@ -21,6 +21,22 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
 
 <style>
+  .container img {
+    animation: rotation 10s infinite linear;
+  position: relative;
+  right: -5px;
+  bottom: 15px;
+  z-index: -1;
+} 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 #first {
   color:azure;
   background-color: black;
@@ -232,10 +248,9 @@
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-center text-white">
-              <h1 class="mb-4">Ready for <i>Passive Income</i></h1>
+              <h1 class="mb-4">Ready for <i>Passive Income</i><h1>
               <h2 class="mb-4">In 2022?</h2>
-              <button type="button" class="btn btn-outline-success btn-rounded btn-lg" data-mdb-ripple-color="light">Click here
-              </button>
+              <button type="button" class="btn btn-outline-success btn-rounded btn-lg" data-mdb-ripple-color="light">Click Here</button>
           </div>
           </div>
         </div>
@@ -291,7 +306,8 @@
         <div class="row">
           <div class="col-md-7">
             <div class="bg-image hover-overlay" data-mdb-ripple-color="light">
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100" />
+            <img style= "border-radius: 100%; height: fit-content; width: fit-content;" src="https://iq-study.com/wp-content/uploads/2020/11/what_is_forex.jpg" alt="the word FOREX along with a stock chart background rotating 36O degrees consistently." class="w-100" />
+            <a href="#!">
             <div
               class="mask"
               style="
@@ -302,6 +318,7 @@
                 );
               "
             ></div>
+          </a>
           </div>
         </div>
           <div id="first" class="col-md-5" >        
