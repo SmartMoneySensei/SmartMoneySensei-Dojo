@@ -86,17 +86,6 @@ box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px
   #carouselBasicExample {
     margin-top: -56px;
   }
-
-  .navbar {
-    background-color: black;
-    position: fixed;
-    top: 0;
-    right: 20;
-    width: 100%;
-    display: flex;
-    transition: 0.6s;
-    z-index: 100;
-  }
  
   
 </style>
@@ -105,7 +94,7 @@ box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px
   <body background="./stars.jpeg">
     <header class="mb-5">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top bg-black navbar-expand-md navbar-dark scrolling-navbar">
       <!-- Container wrapper -->
       <div class="container-fluid">
 
@@ -135,7 +124,7 @@ box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px
             />
           </a>
           <!-- Left links -->
-          <ul style="font-size: 1.0rem" class="navbar-nav mb-2 mb-lg-0">
+          <ul style="font-size: 1.0rem" class="navbar-nav">
             <li class="nav-item">
               <a class="text-white me-3" class="nav-link" href="./about.html">About</a>
             </li>
